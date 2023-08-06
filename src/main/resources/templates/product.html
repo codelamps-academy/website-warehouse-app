@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+<h2>Product Lists</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nama</th>
+    <th>Quantity</th>
+  </tr>
+  <tr th:each = "product : ${products} ">
+    <td th:text="${product.id}"></td>
+    <td th:text="${product.nameProduct}"></td>
+    <td th:text="${product.quantityProduct}"></td>
+  </tr>
+</table>
+
+</body>
+</html>
